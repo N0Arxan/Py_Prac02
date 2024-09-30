@@ -6,7 +6,7 @@ def f(x):
     elif -1>x>1 and x!=0:
         return x**2
     else:
-        return abs(x)//2
+        return abs(x)**0.5
 
 
 def g(x):
