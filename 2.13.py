@@ -1,12 +1,10 @@
 sum = 1
 diff = 1
-i = 0
+counter = 0
 while diff > 0.001:
-    i += 1
-    n = 2**i
-    n2 = 2**(i+1)
-    res = 1/n
-    res2 = 1/n2
-    diff = res-res2
-    sum = sum + res 
+    counter += 1
+    curr_term = 1/(2**counter)
+    next_term = 1/(2**(counter+1))
+    diff = next_term - curr_term
+    sum += curr_term 
 print(sum)
